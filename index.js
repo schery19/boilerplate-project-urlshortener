@@ -21,7 +21,7 @@ app.get('/', function(req, res) {
 });
 
 // Your first API endpoint
-app.post('/api/shorturl', function(req, res) {
+app.post('api/shorturl', function(req, res) {
   const { originalUrl } = req.body;
   const parsedUrl = parse(originalUrl);
 
