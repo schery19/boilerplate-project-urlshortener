@@ -19,7 +19,7 @@
           <fieldset>
             <legend>URL Shortener</legend>
             <label for="url_input">URL:</label>
-            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/" />
+            <input id="url_input" type="text" name="url" placeholder="https://www.freecodecamp.org/"  required/>
             <input type="submit" value="POST URL" />
           </fieldset>
         </form>
@@ -31,13 +31,13 @@
   </body>
 
   <script>
-    document.getElementById('urlForm').addEventListener('submit', function(e) {
-      e.preventDefault();
+    // document.getElementById('urlForm').addEventListener('submit', function(e) {
+    //   e.preventDefault();
 
-      if(!document.getElementById('url_input').value)
-        alert("Vous devez saisir un url !");
-      else
-        this.submit()
-    })
+    //   if(!document.getElementById('url_input').value)
+    //     alert("Vous devez saisir un url !");
+    //   else
+    //     this.submit()
+    // })
   </script>
 </html>
